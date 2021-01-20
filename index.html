@@ -43,10 +43,11 @@
                     </h1>
                     <div class="subheading mb-5">
 
-                        <a href="mailto:name@email.com">luolu.renmin@gmail.com</a>
+                        <a href="mailto:name@email.com">ninjaluluo@gmail.com</a>
                     </div>
-                    <p class="lead mb-5">I am Ninja Lu! I am passionate about data science and machine learning and committed to becoming a master of this science and art form. I am particularly interested in the exciting fields of NLP and deep learning. I also take great interest in effective visualisations and communication. </p>
+                    <p class="lead mb-5">I am Ninja Lu! I am passionate about data science and machine learning and committed to becoming a master of this science and art form. I am particularly interested in the exciting field of NLP and deep learning. I also take great interest in effective visualisations and communication. </p>
                     <p class="lead mb-5"> In my spare time, I enjoy gardening and have a keen eye for floristry and garden design.</p>
+                    <p>Please see my LinkedIn profile and Github page through the links below:</p>
                     <div class="social-icons">
                         <a class="social-icon" href="https://www.linkedin.com/in/lu-luo-698a58191/"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" href="https://github.com/ninjalu"><i class="fab fa-github"></i></a>
@@ -61,50 +62,62 @@
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Document classification for Adarga</h3>
-                            <div class="subheading mb-3">Data</div>
-                            <p>a collection of online news and analytical articles.</p>
-                            <div class="subheading mb-3">Traditional NLP</div>
-                            <p>Handcrafted features using spaCy and SVD of TI-IDF to acheive 91% F1 score on test set.</p>
-                            <div class="subheading mb-3">Neural NLP</div>
-                            <p>BERT and RoBERTa based model to achieve test F1 score of 96%.</p>
-                            <a href="https://github.com/ninjalu/doc-classification/blob/main/presentation.pdf">Read more about it here.</a> <a href="https://github.com/ninjalu/doc-classification"> Code here.</a>
+                            <p>I developed two NLP models to classify the company’s documents as a preprocessing step to assist their downstream entity recognition tasks. I contrasted traditional NLP: hand-crafted features using spaCy and SVD of TF-IDF, achieving test F1 scores of 91% and neural NLP: BERT and RoBERTa based model achieving test F1 score of 96%. Through my approaches, I offered the company a fresh look at how by training one model, all downstream tasks can benefit.</p>
+<!--                            <div class="subheading mb-3">Data</div>-->
+<!--                            <p>a collection of online news and analytical articles.</p>-->
+<!--                            <div class="subheading mb-3">Traditional NLP</div>-->
+<!--                            <p>Handcrafted features using spaCy and SVD of TI-IDF to acheive 91% F1 score on test set.</p>-->
+<!--                            <div class="subheading mb-3">Neural NLP</div>-->
+<!--                            <p>BERT and RoBERTa based model to achieve test F1 score of 96%.</p>-->
+                            <a href="https://github.com/ninjalu/doc-classification/blob/main/presentation.pdf">See my presentation with details and discussions here.</a> <a href="https://github.com/ninjalu/doc-classification"> Code here.</a>
                         </div>
 
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Fraud detection (Kaggle)</h3>
+                            <p>I built and optimised KNN, random forest, SVM and gradient boost machine on imbalanced fraud data, achieving test AUC-PR score of 84%. I designed my own custom metrics to reflex the costs of failure to detect fraud and mistaken genuine for fraud. I also explored different sampling methods and its impact on the model performance.</p>
+<!--
                             <div class="subheading mb-3">Data</div>
                             <p>Transactions made by credit cards over 2 days in September 2013 by European cardholders.</p>
                             <div class="subheading mb-3">EDA</div>
                             <p>Exploratory analysis, feature extraction and engineering.</p>
                             <div class="subheading mb-3">Model building</div>
                             <p>Using over and under sampling, random search methods to build and optimise KNN, random forest, SVM, gradient boost machine, and simple neural network models; design of custom metrics to ensure business applications and interpretation.</p>
+-->
                             <a href="https://github.com/ninjalu/fraud-detection/blob/main/README.md">Read more about it here.</a> <a href="https://github.com/ninjalu/fraud-detection"> Code here.</a>
                         </div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Asset clustering and portfolio optimisation (Data Science for Finance Dojo)</h3>
+                            <p>For this project I performed clustering with correlation matrix and distritbution analysis on anonymous assets daily closing data from 1998 to 2019. I then used Monte Carlo simulation to optimise portfolio resulting a higher Sharpe ratio than benchmark SP500.</p>
+<!--
+                            
                             <div class="subheading mb-3">Data</div>
                             <p>Historical daily prices of 42 anonymous assets from 1998 to 2019.</p>
                             <div class="subheading mb-3">Asset clustering</div>
                             <p>Using correlation matrices and distribution analysis to perform clustering.</p>
                             <div class="subheading mb-3">Portfolio optimisation</div>
                             <p>Using Monte Carlo simulation to perform portfolio optimisation resulting a higher Sharpe ratio compared to SP500 benchmark.</p>
+-->
                             <a href="https://github.com/ninjalu/Asset-clustering-and-portfolio-optimisation/blob/master/README.md">Read more about it here.</a> <a href="https://github.com/ninjalu/Asset-clustering-and-portfolio-optimisation"> Code here.</a>
                         </div>
 
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Property recommender system</h3>
+                            <h3 class="mb-0">Property recommender system (working progress)</h3>
+                            <p>This project aims to build a property recommender system based on property description and images.</p>
+                            <p>The inspiration for this project came out of my own frustration of not being able to search effectively, having a clear idea the kind of property I wanted, but more flexible re location. The end result from this project will be an web app where users can input some hard criterias and click on 'like' or 'dislike' of property images. The recommender will search through the database of properties currently on the market and return the best matches.</p>
+<!--
                             <div class="subheading mb-3">Data</div>
                             <p>Scraped 23k property images and 1.2k property descriptions from a leading online property portal.</p>
                             <div class="subheading mb-3">Classification</div>
                             <p> Deep state-of-the-art neural network model for classifying property images in preparation for building recommender system.</p>
                             <div class="subheading mb-3">Property recommender system</div>
                             <p> Deep autoencoder to find latent representations of property characteristics; neural net recommender based on property latent representation distances; online web app for deployment (work in progress)</p>
+-->
                         </div>
 
                     </div>
