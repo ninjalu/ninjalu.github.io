@@ -148,6 +148,50 @@
                 <h2 class="mb-5">blog</h2>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
+                        <h3 class="mb-0">Graph is Cool</h3>
+                        <div class="subheading mb-3">Some thoughts on recent work on graph databases and network
+                            analysis
+                        </div>
+                        <p>Sep 2024</p>
+                        <p>My work at Napier is sadly coming to an end in November. We are facing mass redundancy.
+                            Looking back, I have had some great projects with clients, prototyped some cool anti-money
+                            laundering solutions, designed MLOps systems, advanced my python programming skills, most
+                            importantly worked with some clever yet humble people.</p>
+                        <p>Amongst all my initiatives, I am the most proud of prototyping graph data science solutions
+                            using Neo4j from scratch. Beyond practicality of containerisation, Kubernetes and helm
+                            charts etc., there are some interesting observations.</p>
+                        <p>First, there is sadly a lack of high quality opensource data for product development. A lot
+                            of the data are very skewed towards making a point, rather than imitating what happens in
+                            the real world</p>
+                        <p>Second, graph is powerful! With traditional supervised machine learning methods, I couldn't
+                            get good results, despite complex feature engineering, trialing out lots of different
+                            algorithms. Graph represent the relationship so well, for one of my dataset, I got more than
+                            90% F1 score for one money laundering typology, all based on simple graph features. More
+                            complexed typology, I needed to bring in some help from traditional ML methods such as
+                            clustering to increase the accuracy. But I got good results without any advanced stuff such
+                            as GNN.
+                        </p>
+                        <p>Third, graph is hard. Hard to visualise, and hard to get a good intuition. Especially when
+                            the edges become really complex. What would help is designing custom metrics for patterns
+                            you want to look out for, that could be totally bespoke, or a combination of the existing
+                            metrics.</p>
+                        <p>Along the way, I learned a lot in terms of graph theory and the practical side of using graph
+                            databases by deploying a standalone Neo4j node in our dev name space interacting with the
+                            service that does the data ingestion, analysis and reporting.</p>
+
+                        <p>The future of graph sounds great. You only need to attend one of Nvidia's graph events to see
+                            how industry has been utilising its power. P.S. I am going to Neo4j's Graph Summit in London
+                            in October. Come to say hello!</p>
+                        <a
+                            href="https://www.napier.ai/post/network-analytics-aml?utm_content=311249811&utm_medium=social&utm_source=linkedin&hss_channel=lcp-15197985">Link
+                            to the article here
+                        </a>
+
+                    </div>
+
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
                         <h3 class="mb-0">Attention was all I needed!</h3>
                         <div class="subheading mb-3">A reflection on traditional NLP and BERT, pizza and sour dough
                         </div>
