@@ -73,7 +73,7 @@
                     <div class="flex-grow-1">
                         <h3 class="mb-0">RAG for garden design</h3>
                         <p>Designed and built a fun RAG project for plant suggestions, using Selenium, Chromadb,
-                            LangChain, Llama. Details see the blog post</p>
+                            LangChain, Llama3. Details see the blog post</p>
                         <!-- <a href="https://github.com/ninjalu/doc-classification/blob/main/presentation.pdf">See my
                             presentation with details and discussions here.</a> <a
                             href="https://github.com/ninjalu/doc-classification"> Code here.</a> -->
@@ -146,6 +146,51 @@
         <section class="resume-section" id="blog">
             <div class="resume-section-content">
                 <h2 class="mb-5">blog</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">RAG for plants (Actively updated)</h3>
+                        <div class="subheading mb-3">Multisearch Agent RAG for my plant hunting
+                        </div>
+                        <p>Oct 2024</p>
+                        <p>Hasn't the field of NLP advanced so much since I left Nemo! Then the acronym "LLM" wasn't
+                            much used. Of course we had been using large language models for years prior, but we (or I)
+                            always used "BERT", "Transformers" or even "neural NLP".</p>
+                        <p>What changed was ChatGPT suddenly brought the advances in LLM to the masses. What had used to
+                            be a tool almost only know in the NLP/ML world was now a tool/toy for Joe in the convenient
+                            store. And what about RAG, or Retrieval Augmented Generation? At Nemo we talked extensively
+                            about building the same using meeting transcript history. "What are the key take aways from
+                            the marathon of meetings on project A since April?"
+                        </p>
+                        <p>Since then, the technology has moved on so much while I busied myself with AML
+                            solutions. We now have many more choices of open source LLMs to play with, better
+                            performance and much better tooling!</p>
+                        <p>LangChain for example has impressed me the most, I couldn't help having a little play with
+                            it.
+                        </p>
+                        <p>My problem: I have for years wanted to build a tool to help me find new and interesting
+                            plants that matches my criteria. Watching Gardeners' World and listening Gardeners' Question
+                            Time is certainly fun, but what did Matthew Pottage said about buxus alternatives?
+                        </p>
+                        <p>Solution: It has to be Multisearch Agent RAG! Built with LangChain, using the vector database
+                            I created from scraping Royal Horticulture Society's website and transcripts from Gardeners'
+                            Question Time, Langchain's and WikipediaAPI tool.
+                        </p>
+
+                        <p>Architecture: </p>
+                        <img src="assets/img/ragflowchart.jpg" alt="RAG design">
+                        <p>First implementation was the top flow in the chart above. I scrapped all the pages from <a
+                                href="https://www.rhs.org.uk/plants/search-results" target="_blank">Royal
+                                Horticulture Society's plant search page</a>, and created a vector store using Chromadb.
+                            Then I used LangChain and Llama3 to create a retriever chain, from which I was able to get
+                            some decent response. My question: What's the best plant for a north facing garden with clay
+                            soil. I like purple flower in autumn as well as summer? Height: about 0.9m to 1.2m. Please
+                            list the top cultivars for autumn interest</p>
+                        <img src="assets/img/answer.png" alt="RAG answer">
+
+
+                    </div>
+
+                </div>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
                         <h3 class="mb-0">Graph is Cool</h3>
