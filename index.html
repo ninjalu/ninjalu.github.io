@@ -73,8 +73,10 @@
                     <div class="flex-grow-1">
                         <h3 class="mb-0">RAG for garden design</h3>
                         <p>Design and build a fun RAG project for plant suggestions, using Selenium, Chromadb,
-                            LangChain, Llama3 and GraphRAG! Details see the blog post. Code </p>
-                        <a href="https://github.com/ninjalu/plant-rag">here.</a>
+                            LangChain, Llama3, Whisper and GraphRAG, using multiple resources including LangChain Wiki
+                            tool and scrapped webpages from Royal Horticultural Society and BBC Gardeners' Question Time
+                        </p>
+                        <a href="https://github.com/ninjalu/plant-rag">Details see the blog post. Code here.</a>
                     </div>
 
                 </div>
@@ -146,8 +148,8 @@
                 <h2 class="mb-5">blog</h2>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
-                        <h3 class="mb-0">RAG for plants (Actively updating)</h3>
-                        <div class="subheading mb-3">Multisearch Agent RAG for my plant hunting
+                        <h3 class="mb-0">RAG for plants (Updating)</h3>
+                        <div class="subheading mb-3">Multisearch Agent RAG for my plant hunting with Knowledge Graph
                         </div>
                         <p>Oct 2024</p>
                         <p>Hasn't the field of NLP advanced so much since I left Nemo! Then the acronym "LLM" wasn't
@@ -189,9 +191,14 @@
                             list the top cultivars for autumn interest
                         </p>
                         <div class="img-fluid"><img src="assets/img/answer.png" alt="RAG answer"></div>
-                        <p>This is cool. However, I am missing the growing experience from the expertise on
-                            Gardeners' Question Time panel. Especially ex Wisley curator Matthew Pottage! Next step
-                            adding personality and growing expertise from my favourite gardeners (To be continued)</p>
+                        <p>This is cool. However, I want to be able to ask questions that is outside of the corpus I
+                            scraped. LangChain's Wiki tool provided a great option for enriching my RAG experience,
+                            which I added to my multitooled agent (also added Fastapi). This was the result when I asked
+                            where sedum came from and what is its new name</p>
+                        <div class="img-fluid"><img src="assets/img/fastapi-resp.png" alt="RAG with Wiki"></div>
+                        <p>This looks nice, however it stumbled on "new name", which should be "Hylotelephium". Perhaps
+                            time to add knowledge graph!
+                        </p>
 
 
                     </div>
